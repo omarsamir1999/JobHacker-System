@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 public class ColumnInArray {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        int col = sc.nextInt();
-        char op = sc.next().charAt(0);
+        int col = scanner.nextInt();
+        char op = scanner.next().charAt(0);
 
         double[][] matrix = new double[12][12];
 
         for (int i = 0; i < 12; i++) {
             for (int j = 0; j < 12; j++) {
-                matrix[i][j] = sc.nextDouble();
+                matrix[i][j] = scanner.nextDouble();
             }
         }
 

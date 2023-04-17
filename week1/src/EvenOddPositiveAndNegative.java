@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class EvenOddPositiveAndNegative {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         int even = 0, odd = 0, positive = 0, negative = 0;
 
         for (int i = 0; i < 5; i++) {
-            int x = sc.nextInt();
+            int x = scanner.nextInt();
 
             if (x % 2 == 0) {
                 even++;

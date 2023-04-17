@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class ArrayFillII {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        int t = sc.nextInt();
+        int t = scanner.nextInt();
         int[] n = new int[1000];
 
         for (int i = 0; i < 1000; i++) {

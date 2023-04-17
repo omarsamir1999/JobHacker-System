@@ -2,18 +2,18 @@ import java.util.Scanner;
 
 public class Banknotes {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         System.out.println(n);
 
         int[] notas = {100, 50, 20, 10, 5, 2, 1};
 
         for (int nota : notas) {
-            int qtd_notas = n / nota;
-            System.out.printf("%d nota(s) de R$ %d,00\n", qtd_notas, nota);
-            n -= qtd_notas * nota;
+            int num_notes = n / nota;
+            System.out.printf("%d nota(s) de R$ %d,00\n", num_notes, nota);
+            n -= num_notes * nota;
         }
 
     }
