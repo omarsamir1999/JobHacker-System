@@ -36,7 +36,7 @@ public class Task3 {
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         String line;
         while ((line = bufferedReader.readLine()) != null) {
-            String[] numbers = line.split("\s+");
+            String[] numbers = line.split("\\s+");
             for (String number : numbers) {
                 sum += Integer.parseInt(number);
             }
@@ -52,7 +52,7 @@ public class Task3 {
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         String line;
         while ((line = bufferedReader.readLine()) != null) {
-            String[] numbers = line.split("\s+");
+            String[] numbers = line.split("\\s+");
             count += numbers.length;
         }
         average = sum / count;

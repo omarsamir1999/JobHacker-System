@@ -10,7 +10,7 @@ public class Task1 {
 
         while (true) {
             try {
-                System.out.print("Enter the first number: ");
+                System.out.print("Enter the first number :");
                 num1 = input.nextInt();
                 break;
             } catch (InputMismatchException e) {

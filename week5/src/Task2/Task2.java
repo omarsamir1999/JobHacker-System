@@ -12,7 +12,7 @@ public class Task2 {
 
         String line;
         while ((line = bufferedReader.readLine()) != null) {
-            String[] words = line.split("\s+");
+            String[] words = line.split("\\s+");
             wordCount += words.length;
         }
         bufferedReader.close();
