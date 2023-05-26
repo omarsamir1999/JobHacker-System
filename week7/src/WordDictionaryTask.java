@@ -6,23 +6,23 @@ public class WordDictionaryTask {
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        HashMap<Character, ArrayList<String>> wordsMap = new HashMap<>();
+        HashMap<Character, ArrayList<String>> wordMap = new HashMap<>();
 
         System.out.print("Enter number of words: ");
         int numberOfWords = input.nextInt();
         input.nextLine();
 
         // call method addWordsToDictionary
-        addWordsToDictionary(numberOfWords,wordsMap);
+        addWordsToDictionary(numberOfWords,wordMap);
 
         // call method printAll
-        printAll(wordsMap);
+        printAll(wordMap);
 
         System.out.print("Enter a letter to print  words: ");
         char letter = input.nextLine().toLowerCase().charAt(0);
 
         // call method printWordsOfLetter
-        printWordsOfLetter(letter,wordsMap);
+        printWordsOfLetter(letter,wordMap);
 
     }
 
